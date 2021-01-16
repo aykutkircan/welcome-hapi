@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^20.0.3"
+    "@hapi/hapi": "^20.0.3",
+    "@hapi/vision": "^6.0.1",
+    "dotenv": "^8.2.0",
+    "handlebars": "^4.7.6"
   }
 }

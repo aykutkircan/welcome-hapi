@@ -1,12 +1,27 @@
 "use strict"
 
 const Hapi = require("@hapi/hapi");
+const Handlebars = require("handlebars");
+const Vision = require('@hapi/vision');
+const Path = require("path");
+require("dotenv").config({path: __dirname + "/.env"})
+
+const PORT = process.env.PORT || 3000;
 
 const init = async ()=>{
 
     const server = Hapi.server({
         host: "localhost",
-        port: 1234
+        port: PORT
+    });
+
+    await server.register(Vision);
+
+    server.views({
+        engines: {
+            html: Handlebars,
+        },
+        path: Path.join(__dirname, "/view")
     });
 
     server.route({
@@ -14,23 +29,12 @@ const init = async ()=>{
         path: "/",
         handler: (request, h)=>{
     
-            return h.response("url path e '/welcome' ekleyin, ve /welcome path'ine gidin.");
-        }
-    });
-
-    server.route({
-        method: "GET",
-        path: "/welcome",
-        handler: (request, h)=>{
-    
-            return h.response("Welcome to Hapi.JS");
+            return h.view("welcome.html");
         }
     });
 
     await server.start();
-    console.log("Server running on port http://localhost:1234");
-    
-
+    console.log(`Server running on port http://localhost:${PORT}`);
 };
 
 
