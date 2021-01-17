@@ -4,7 +4,7 @@ const Hapi = require("@hapi/hapi");
 const Handlebars = require("handlebars");
 const Vision = require('@hapi/vision');
 const Path = require("path");
-require("dotenv").config({path: __dirname + "/.env"})
+require("dotenv").config({path: __dirname + "/.env"});
 
 const PORT = process.env.PORT || 3000;
 
@@ -30,6 +30,15 @@ const init = async ()=>{
         handler: (request, h)=>{
     
             return h.view("welcome.html");
+        }
+    });
+
+    server.route({
+        method: "GET",
+        path: "/port",
+        handler: (request, h)=>{
+    
+            return h.response(`İsteğin cevaplandığı port:  ${PORT}`);
         }
     });
 
