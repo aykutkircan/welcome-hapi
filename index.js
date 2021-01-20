@@ -82,6 +82,15 @@ const init = async ()=>{
 
     server.route({
         method: "GET",
+        path: "/hasan-rovesata",
+        handler: (request, h)=>{
+    
+            return h.view("hasan.html");
+        }
+    });
+
+    server.route({
+        method: "GET",
         path: "/port",
         handler: (request, h)=>{
     
