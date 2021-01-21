@@ -15,4 +15,4 @@ server canlıda ayaga kaldırılmıştır :D dadasd
 
 henüz bir server_name imimiz yok fakat ip yi aşağıya bırakıyorum..
 
-[LINK: ](http://18.198.111.93)
+[LINK: operlespor](http://18.198.111.93)
