@@ -15,5 +15,4 @@ server canlıda ayaga kaldırılmıştır :D dadasd
 
 henüz bir server_name imimiz yok fakat ip yi aşağıya bırakıyorum..
 
-http://18.198.111.93
-[go](http://18.198.111.93){:target="_blank" rel="noopener"}
+[LINK: ](http://18.198.111.93)
