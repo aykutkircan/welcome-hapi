@@ -92,4 +92,13 @@ li {
     .home-logo{
         display: flex;
     }
+    .developed-by {
+        text-align: start;
+    }
+    .all-right-reserved h5 {
+        font-size: 10px;
+    }
+    .developed-by span {
+        font-size: 8px;
+    }
 }
