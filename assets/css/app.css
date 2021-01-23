@@ -8,13 +8,7 @@ li {
 }
 
 .navigation {
-    /* height: 65px;
-    width: 100%;
-    border-top: solid 1px #e1e1e1;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    background: #fff; */
+    background-color: #555555;
 }
 
 .navigation ul {
@@ -22,7 +16,6 @@ li {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #555555;
 }
 .navigation li {
     float: left;
