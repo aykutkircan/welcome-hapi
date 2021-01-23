@@ -20,25 +20,6 @@ const init = async ()=>{
             }
         }
     });
-    
-    const plugin = {
-        name: "file",
-        multiple: false,
-        register: (server)=>{
-            server.route({
-                path: "/assets/{path*}",
-                method: "GET",
-                config: {
-                    auth: false,
-                    handler: {
-                        directory: {
-                            path: Path.join(__dirname, "assets"),
-                        }
-                    }
-                }
-            })
-        }
-    }
 
     await server.register(Vision);
     await server.register(Inert);
@@ -47,7 +28,11 @@ const init = async ()=>{
         engines: {
             html: Handlebars,
         },
-        path: Path.join(__dirname, "/view")
+        path: Path.join(__dirname, "/views"),
+        layoutPath: Path.join(__dirname, "views/layout"),
+        layout: "layout",
+        partialsPath: Path.join(__dirname, "views/partials"),
+        helpersPath: Path.join(__dirname, "views/helpers")
     });
 
     server.route({

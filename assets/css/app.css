@@ -1,0 +1,93 @@
+li {
+    list-style: none;
+}
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    /* height: 65px;
+    width: 100%;
+    border-top: solid 1px #e1e1e1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background: #fff; */
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #555555;
+}
+.navigation li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #555555;
+    padding: 25px 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.developed-by {
+    text-align: end;
+}
+.developed-by span{
+    color: #c1c1c1;
+    font-size: 14px;
+}
+.all-right-reserved{
+    text-align: start;
+}
+.all-right-reserved h5 {
+    color: #c1c1c1;
+    font-size: 14px;
+}
+
+.logo img{
+    width: 80px;
+}
+.center {
+    text-align: center;
+}
+
+.header-social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.header-social ul {
+    display: flex;
+}
+.header-social li {
+    margin-left: 10px;
+    padding: 10px;
+}
+.header-social ul li a img{
+    width: 40px;
+}
+
+#hakkimizda {
+    width: 1066px;
+    height: 800px;
+    border: 3px solid #ccc;
+    background: #eee;
+    margin: auto;
+    padding: 15px 10px;
+}
